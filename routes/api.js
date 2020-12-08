@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const Workout = require("../models/workout");
-const index = require("../models/index")
+// const index = require("../models/index")
 
 //get route for /api/workouts
 router.get("/api/workouts", function(req, res) {
@@ -22,7 +22,6 @@ router.get("/api/workouts/range", function(req, res) {
         .catch(err => {
             res.status(400).json(err);
         });
-
 });
 
 //post route for /api/workouts
